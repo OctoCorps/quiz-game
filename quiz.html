@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify the Leukocytes Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 id="question" class="text-center"></h3>
+        <img id="questionImage" class="img-fluid mt-3 d-block mx-auto d-none" alt="Question Image" />
+        <div id="answerSection" class="text-center mt-4">
+            <input type="text" id="answerInput" class="form-control mb-3 mx-auto" placeholder="Type your answer here">
+            <button class="btn btn-primary mx-auto" onclick="submitAnswer()">Submit Answer</button>
+        </div>
+        <div id="resultIcon" class="text-center mt-4"></div>
+        <div id="timer" class="text-center mt-4 timer"></div> 
+        <div class="text-center mt-4">
+            <button id="nextBtn" class="btn btn-primary d-none" onclick="nextQuestion()">Next Question</button>
+            
+            <button id="restartBtn" class="btn btn-secondary d-none" onclick="restartQuiz()">
+                <i class="fas fa-redo-alt"></i> Restart Quiz
+            </button>
+       
+            
+            <button id="revealAnswersBtn" class="btn btn-info d-none" onclick="revealAnswers()">
+                <i class="fas fa-eye"></i> Reveal Answers
+            </button>
+        </div>
+        <div id="score" class="text-center mt-4"></div>
+        <div id="answers" class="mt-4 d-none"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

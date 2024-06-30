@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resultIcon {
+    font-size: 2em;
+    text-align: center;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+
+.btn-primary {
+    background-color: #808080; 
+    border-color: #808080; 
+}
+
+.btn-primary:hover {
+    background-color: #696969; 
+    border-color: #696969; 
+}
+
+.btn-secondary {
+    background-color: #808080;
+    border-color: #808080; 
+}
+
+.btn-secondary:hover {
+    background-color: #696969; 
+    border-color: #696969; 
+}
+
+.btn-info {
+    background-color: #808080; 
+    border-color: #808080; 
+}
+
+.btn-info:hover {
+    background-color: #696969; 
+    border-color: #696969; 
+}
+
+
